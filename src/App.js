@@ -1,6 +1,6 @@
 import "./App.css";
-import ContactListComponent from "./components/container/contact_list";
-import TaskListComponent from "./components/container/task_list";
+import Clock from "./components/pure/clock";
+import ClockComponent from "./hooks/ClockComponent";
 
 function App() {
   return (
@@ -11,7 +11,18 @@ function App() {
         {/* <GreetingF name="Roberto"></GreetingF> */}
         {/* Componente de Listado de tareas */}
         {/* <TaskListComponent></TaskListComponent> */}
-        <ContactListComponent></ContactListComponent>
+        {/* <ContactListComponent></ContactListComponent> */}
+        {/* Ejemplos de usos de hook */}
+        {/* <Ejemplo1></Ejemplo1> */}
+        {/* <Ejemplo2></Ejemplo2> */}
+        {/* <MiComponenteConContexto></MiComponenteConContexto> */}
+        {/* <Ejemplo4 nombre="Juan">
+          //todo lo que hay aqui es tratado como props.children 
+          <h3>contenido del children</h3>
+        </Ejemplo4> */}
+        {/* <GreetingStyled name="Juan"></GreetingStyled> */}
+        <Clock></Clock>
+        <ClockComponent></ClockComponent>
       </header>
     </div>
   );
